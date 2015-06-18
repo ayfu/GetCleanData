@@ -20,7 +20,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 		4. SITTING
 		5. STANDING
 		6. LAYING
-	- The code reads from `UCI HAR Dataset/features.txt` to extract measurement names, and then it appropriately labels each column in the data frame with descriptive variable names. It does this by extracting the character strings with the "mean" and "std" in them and then replaces each column name with the extracted string (excluding the activity column and the subject column). The final data frame is still 10299 x 68, so there are a total of 66 variable names, which are:
+	- The code reads from `./UCI HAR Dataset/features.txt` to extract measurement names, and then it appropriately labels each column in the data frame with descriptive variable names. It does this by extracting the character strings with the "mean" and "std" in them and then replaces each column name with the extracted string (excluding the activity column and the subject column). The final data frame is still 10299 x 68, so there are a total of 66 variable names, which are:
 		1. "tBodyAcc-mean()-X" 
 		2. "tBodyAcc-mean()-Y"
 		3. "tBodyAcc-mean()-Z"
@@ -87,4 +87,4 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 		64. "fBodyBodyGyroMag-std()" 
 		65. "fBodyBodyGyroJerkMag-mean()" 
 		66. "fBodyBodyGyroJerkMag-std()"
-	- The script finally creates a tidy data set, `tidyData.txt` that describes the average of each measurement for each activity and each subject. The size of the data frame is 180x68 where the 68 columns corresponds to the columns from the previous data frame. The first column describes the 30 subject ID #s, which are numbers between 1-30, and the second column describes the specific activity. The rest of the columns correspond to the 66 variable names above. Since there are 30 subjects and 6 different activities, the data frame will have 180 rows describing each observation.
+	- The script finally creates a tidy data set, `tidyData.txt`, that describes the average of each measurement for each activity and each subject. The size of the data frame is 180x68 where the 68 columns corresponds to the columns from the previous data frame. The first column describes the 30 subject ID #s, which are numbers between 1-30, and the second column describes the specific activity. The rest of the columns correspond to the 66 variable names above. Since there are 30 subjects and 6 different activities, the data frame will have 180 rows describing each observation.
