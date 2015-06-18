@@ -2,13 +2,13 @@
 
 This `CodeBook.md` file describes the variables, the data, and any transformations or work that I performed to clean up the data
 
-A. The data is collected from the accelerometer and gyroscope measurements from a Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
+- The data is collected from the accelerometer and gyroscope measurements from a Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-B. The download link for the data can be found here:
+- The download link for the data can be found here:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-C. This code, `run_analysis.r`, in my [GetCleanData repository](https://github.com/ayfu/GetCleanData), performs the following to download, to extract, and to clean up the accelerometer and gyroscope data from a Samsung Galaxy S smartphone
+- This code, `run_analysis.r`, in my [GetCleanData repository](https://github.com/ayfu/GetCleanData), performs the following to download, to extract, and to clean up the accelerometer and gyroscope data from a Samsung Galaxy S smartphone
 	- The script will automatically download and unzip all the files to the `./UCI HAR Dataset/` directory, which is created when you unzip the files.
 	- It will then read in the sensor data for training and testing in `./UCI HAR Dataset/train/X_train.txt` and `./UCI HAR Dataset/test/X_test.txt`. It will also read in the subject # label dataset for training and testing in `./UCI HAR Dataset/train/subject_train.txt` and `./UCI HAR Dataset/test/subject_test.txt`. It will also read in the activity # label dataset for training and testing in `./UCI HAR Dataset/train/y_train.txt` and `./UCI HAR Dataset/test/y_test.txt`.
 	- The script will then merge all this data together to form a dataframe with 10299 observations and 563 variables, with 2 of the variable columns being the subject ID label (1-30) and activity ID label (1-6), respectively. The rest of the 561 variables relate to accelerometer and gyroscope measurements taken by the Samsung smartphone.

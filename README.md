@@ -6,7 +6,7 @@ This `README.md` file describes how `run_analysis.r` works and how to use the sc
 
 2. Please type `source("run_analysis.r")` in RStudio or R to load the script. Follow this by typing `run_analysis()` in RStudio or R to run the script.
 
-3. Once you run the script, it will automatically download the data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and unzip the file all to the working directory. This data is from the UCI Human Activity Recognition Using Smartphones Data Set http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
+3. Once you run the script, it will automatically download the data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and unzip the zip file to the working directory. This data is from the UCI Human Activity Recognition Using Smartphones Data Set http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
 	- The unzipped folder will be called `UCI HAR Dataset` and it will be in the working directory.
 
 4. The script will automatically read the data and merge the data together into one data frame. It reads the data from: 
